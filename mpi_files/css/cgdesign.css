@@ -1,3 +1,7 @@
+.row1, .row2, .row3, .row4, .row5, .row6, .row7, .row8, .row9, .row10, .row11, .row12, .row13, .row14, .rowPayments, .rowUserDataListData, .responsive_page_line_break {
+    float: none !important;
+}
+
 div.container {
     float: none;
     max-width: 100%;
@@ -8,16 +12,19 @@ div.logo {
     text-align: center;
     padding-bottom: 14px;
 }
-div.sep{
+
+div.sep {
     margin: 0;
     height: 1px;
 }
+
 div.inner-container {
-    max-width: 480px;
+    max-width: 350px;
     margin: 0 auto;
     float: none;
 }
-#creditForm{
+
+#creditForm {
     color: #090909;
 }
 
@@ -28,15 +35,19 @@ div.inner-container {
     text-align: center;
     padding: 40px 0 28px;
 }
+
 .grid_3 {
     width: 15%;
 }
+
 .grid_12.row4 {
     padding: 19px 0 9px;
 }
-.grid_12.row5{
+
+.grid_12.row5 {
     padding-bottom: 38px;
 }
+
 .grid_12.row7 {
     font-size: 15px;
     font-weight: bold;
@@ -44,132 +55,163 @@ div.inner-container {
     text-align: center;
 }
 
+.grid_12.row8,
 .grid_12.row9,
 .grid_12.row10,
 .grid_12.row12,
 .first-row-payment {
     margin-bottom: 10px;
 }
+
 .td_style_fieldName {
-    font-size: 13px;
+    font-size: 15px;
     font-weight: bold;
     width: auto;
     padding-left: 10px;
+    margin-bottom: 5px;
 }
+
 .td_style_fieldValue {
     font-size: 13px;
 }
+
 .card-details-wrapper {
     border: solid 1px #acacac;
-    float: right;
     text-align: right;
-    padding: 12px 40px 20px;
+    padding: 20px 40px 20px;
 }
+
 .card-details-wrapper .td_style_fieldName {
-    width: 95px;
-    padding-top: 5px;
+
 }
+
 input[type="text"],
 input[type="submit"],
 input[type="reset"],
 input[type="number"],
 select,
-.pci_image,
-#cancelBtn {
+.pci_image {
     border-width: 1px;
     border-radius: 0px;
-    height: 22px;
-    border-color: #e7e7e7;
+    height: 30px;
+    padding: 0 5px;
+    border-color: #b1b1b1;
+    box-sizing: border-box;
+    font-size: 14px;
 }
+
 select {
-    background: #e7e7e7;
+    width: 80px;
 }
+
 .card-number input[type="text"],
 .id-customer input[type="text"] {
-    width: 290px;
+
 }
+
 .expYear {
-    width: 40%;
     margin-left: 5px;
 }
+
 .expMonth {
-    width: 30%;
     margin-right: 5px;
 }
+
 .cvv-form {
     width: 50%;
 }
+
 .cvv-help {
     background: #e7e7e7;
     border-radius: 50%;
     margin-right: 7px;
     padding: 3px 7px;
 }
+
 .numberOfPayments {
     width: 100%;
 }
+
 .td_style_steps_payment {
     padding-top: 5px;
     width: 22%;
 }
+
 .form_buttons {
     text-align: center;
-    margin-top: 19px;
 }
+
 .form_buttons input {
-    width: 40%;
-    margin: 0 4%;
-    padding: 4px;
     font-weight: bold;
 }
+
 .form_buttons .resetBtn {
     background: #e7e7e7;
     height: auto;
     color: #7e7c7c;
+    display: none;
 }
+
 .form_buttons .submitBtn {
     height: auto;
-    background: #e4008e;
+    width: 100%;
+    background: #37b424;
+    font-size: 18px;
+    padding: 7px 0px;
 }
+
 .pci-images-wrapper {
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
 }
+
 .pci-images-wrapper .pci_image {
     border-color: transparent;
     height: auto;
     width: 20%;
 }
 
-@media (max-width: 590px) {
-    div.page_title {
-        display: block;
-    }
+/*@media (max-width: 590px) {*/
+div.page_title {
+    display: block;
 }
 
-@media ( max-width: 500px ) {
-    .card-number,
-    .id-customer {
-        width: 100%;
-    }
-    .card-number input[type="text"],
-    .id-customer input[type="text"] {
-        width: 100%;
-    }
+/*@media ( max-width: 500px ) {*/
+.card-number,
+.id-customer {
+    width: 100%;
 }
-@media ( max-width: 482px ) {
-    .date-section,
-    .date-section .td_style_fieldValue{
-        width: 100%;
-    }
+
+.card-number input[type="text"],
+.id-customer input[type="text"] {
+    width: 100%;
 }
-@media ( max-width: 420px ) {
-    div.order-id {
-        width: auto;
-        display: inline-block;
-    }
-    .td-number-of-payment {
-        width: 20%;
-    }
+
+.date-section,
+.date-section .td_style_fieldValue {
+    width: 100%;
+}
+
+div.order-id {
+    width: auto;
+    display: inline-block;
+}
+
+.td-number-of-payment {
+    width: 20%;
+}
+
+/** validation **/
+.invalid_field_place_holder {
+    display: none;
+}
+
+.td_style_invalidField {
+    font-weight: bold;
+    color: red;
+    text-align: right;
+    font-size: 12px;
+    width: auto;
+    margin-top: 5px;
 }

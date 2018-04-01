@@ -39,7 +39,6 @@
 
 <div class="grid_12 row2 sep"></div>
 <div class="inner-container">
-<div class="grid_12 row2 page_title">פרטי עסקה מאובטחת</div>
 
 <div class="grid_12 row2 sep"></div>
 
@@ -63,50 +62,7 @@
 	<input type="hidden" name="userData9" value="" />
 	<input type="hidden" name="userData10" value="" />-->
 
-	<div class="grid_12 row4">
-			<div class="grid_1 row4 td_style_fieldName">
-				<%=DynamicPaymentAmount%>:
-			</div>
-
-			<div id="amount" class="grid_3 row4 td_style_fieldValue">
-				<%=amountForDisplay%>
-			</div>
-
-			<div class="responsive_page_line_break"></div>
-
-			<div class="grid_1 row4 td_style_fieldName">
-				 <%=paymentCEmail%>:
-			</div>
-
-			<div class="grid_3 row4 td_style_fieldValue responsive_value_field_width_limit">
-				 <%=customerEmail%>
-			</div>
-	</div>
-
-	<div class="grid_12 row5">
-			<div class="grid_1 row5 td_style_fieldName">
-				 <%=paymentCurrency%>:
-			</div>
-
-			<div class="grid_3 row5 td_style_fieldValue">
-				<%=currency%>
-			</div>
-
-			<div class="responsive_page_line_break"></div>
-
-			<div class="grid_1 row5 td_style_fieldName">
-				<%=paymentOrderId%>:
-			</div>
-
-			<div class="grid_3 row5 td_style_fieldValue responsive_value_field_width_limit order-id">
-				<%=orderId%>
-			</div>
-	</div>
-
     <div class="card-details-wrapper">
-	<div class="grid_12 row7 td_style_1">
-		הזנת פרטי כרטיס אשראי לתשלום
-	</div>
 
 	<div class="grid_12 row8">
 			<div class="grid_1 row8 td_style_fieldName">
