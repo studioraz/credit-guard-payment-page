@@ -35,14 +35,10 @@
 
 <!--  DISPLAY TRANSACTION INFORMATION -->
 <div class="container">
-	
-
 
 <div class="grid_12" width="100%">
 	<div class="grid_6 row1 logo">&nbsp;</div>
 </div>
-	
-<div class="grid_12 row2 sep"></div>
 
 <div class="grid_12 row2 page_title"><%=pageTitle%></div>
 

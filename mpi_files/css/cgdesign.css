@@ -5,6 +5,7 @@
 div.container {
     float: none;
     max-width: 100%;
+    padding: 0;
 }
 
 div.logo {
@@ -19,7 +20,7 @@ div.sep {
 }
 
 div.inner-container {
-    max-width: 350px;
+    /*max-width: 350px;*/
     margin: 0 auto;
     float: none;
 }
@@ -76,9 +77,17 @@ div.inner-container {
 }
 
 .card-details-wrapper {
-    border: solid 1px #acacac;
     text-align: right;
-    padding: 20px 40px 20px;
+    padding: 0 10px;
+}
+
+.card-details-wrapper:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
 }
 
 .card-details-wrapper .td_style_fieldName {
@@ -119,6 +128,11 @@ select {
 
 .cvv-form {
     width: 50%;
+}
+
+
+.grid_12.row10.td_style_fieldName {
+    margin-top: 6px;
 }
 
 .cvv-help {
@@ -214,4 +228,14 @@ div.order-id {
     font-size: 12px;
     width: auto;
     margin-top: 5px;
+}
+
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
 }
