@@ -17,10 +17,11 @@ div.logo {
 div.sep {
     margin: 0;
     height: 1px;
+    background: none;
 }
 
 div.inner-container {
-    /*max-width: 350px;*/
+    max-width: 350px;
     margin: 0 auto;
     float: none;
 }
@@ -61,7 +62,7 @@ div.inner-container {
 .grid_12.row10,
 .grid_12.row12,
 .first-row-payment {
-    margin-bottom: 10px;
+    /*margin-bottom: 10px;*/
 }
 
 .td_style_fieldName {
