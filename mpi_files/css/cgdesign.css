@@ -2,10 +2,18 @@
     float: none !important;
 }
 
+.grid_8 {
+    width: 100%;
+}
+
 div.container {
     float: none;
     max-width: 100%;
     padding: 0;
+}
+
+div#main-container {
+    max-width: 220px;
 }
 
 div.logo {
@@ -42,6 +50,11 @@ div.inner-container {
     width: 15%;
 }
 
+/* row 8 */
+.grid_12 {
+    margin-bottom: 10px;
+}
+
 .grid_12.row4 {
     padding: 19px 0 9px;
 }
@@ -65,7 +78,7 @@ div.inner-container {
     /*margin-bottom: 10px;*/
 }
 
-.td_style_fieldName {
+.td_style_fieldName, .td_style_fieldPayments {
     font-size: 15px;
     font-weight: bold;
     width: auto;
@@ -112,11 +125,12 @@ select,
 
 select {
     width: 80px;
+    text-align: right;
+    background-color: transparent;
 }
 
-.card-number input[type="text"],
-.id-customer input[type="text"] {
-
+#Track2CardNo, #personalId {
+    width: 100%;
 }
 
 .expYear {
@@ -147,6 +161,10 @@ select {
     width: 100%;
 }
 
+.grid_12.rowPayments + .grid_12.rowPayments {
+    display: none;
+}
+
 .td_style_steps_payment {
     padding-top: 5px;
     width: 22%;
@@ -167,7 +185,7 @@ select {
     display: none;
 }
 
-.form_buttons .submitBtn {
+#submitBtn {
     height: auto;
     width: 100%;
     background: #37b424;

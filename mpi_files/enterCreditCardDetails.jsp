@@ -27,15 +27,14 @@
 <link href="merchantPages/ResponsiveWebSources/css/normalize.css" rel="stylesheet" type="text/css" />
 <link href="merchantPages/ResponsiveWebSources/css/grid.css" rel="stylesheet" type="text/css" />
 <link href="merchantPages/ResponsiveWebSources/css/responsive.main.rtl.css" rel="stylesheet" type="text/css" />
-<link href="merchantPages/afrodita/css/cgdesign.css" rel="stylesheet" type="text/css" />
 <%=responsiveEngCSS%>
-
+<link href="merchantPages/almas/css/cgdesign.css" rel="stylesheet" type="text/css" />
 <title><%=pageTitle%></title>
 </head>
 <body onload="onLoad();">
 
 <!--  DISPLAY TRANSACTION INFORMATION -->
-<div class="container">
+<div id="main-container" class="container">
 
 <div class="grid_12 row2 sep"></div>
 <div class="inner-container">
@@ -62,8 +61,65 @@
 	<input type="hidden" name="userData9" value="" />
 	<input type="hidden" name="userData10" value="" />-->
 
-    <div class="card-details-wrapper">
+    <div style="display:none">
+        <div class="grid_12 row3 td_style_1">
+            <%=paymentDetails%>
+        </div>
 
+        <div class="grid_12 row4">
+                <div class="grid_1 row4 td_style_fieldName">
+                    <%=DynamicPaymentAmount%>:
+                </div>
+
+                <div id="amount" class="grid_3 row4 td_style_fieldValue">
+                    <%=amountForDisplay%>
+                </div>
+
+                <div class="responsive_page_line_break"></div>
+
+                <div class="grid_1 row4 td_style_fieldName">
+                     <%=paymentCEmail%>:
+                </div>
+
+                <div class="grid_3 row4 td_style_fieldValue responsive_value_field_width_limit">
+                     <%=customerEmail%>
+                </div>
+        </div>
+
+        <div class="grid_12 row5">
+                <div class="grid_1 row5 td_style_fieldName">
+                     <%=paymentCurrency%>:
+                </div>
+
+                <div class="grid_3 row5 td_style_fieldValue">
+                    <%=currency%>
+                </div>
+
+                <div class="responsive_page_line_break"></div>
+
+                <div class="grid_1 row5 td_style_fieldName">
+                    <%=paymentOrderId%>:
+                </div>
+
+                <div class="grid_3 row5 td_style_fieldValue responsive_value_field_width_limit">
+                    <%=orderId%>
+                </div>
+        </div>
+
+        <div class="grid_12 row6">
+                <div class="grid_1 row6 td_style_fieldName">
+                    <%=paymentDesc%>:
+                </div>
+
+                <div class="grid_8 row6 td_style_fieldValue responsive_value_field_width_limit">
+                    <%=description%>
+                </div>
+        </div>
+
+        <div class="grid_12 row7 td_style_1">
+            <%=CCDetails%>
+        </div>
+    </div>
 	<div class="grid_12 row8">
 			<div class="grid_1 row8 td_style_fieldName">
 				<%=CCNumber%>:
@@ -105,7 +161,6 @@
 			<div class="grid_1 row9 invalid_field_place_holder">&nbsp;</div>
 			<div class="grid_8 row9 td_style_invalidField" id="invalidCardExp">&nbsp;</div>
 	</div>
-
 	<div class="grid_12 row10">
 			<div class="grid_1 row10 td_style_fieldName">
 				CVV:
@@ -138,7 +193,6 @@
 			<div class="grid_8 row10 td_style_invalidField">&nbsp;</div>
 	</div>
 	-->
-
 	<div class="grid_12 row12">
 			<div class="grid_1 row12 td_style_fieldName">
 				<%=CCPId%>:
